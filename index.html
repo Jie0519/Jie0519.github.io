@@ -7,6 +7,7 @@
     $(document).ready(function(){
       $('#hide').click(function(){
       $('.introduce').hide();
+      $('.introduce').html("你隱藏了Intonduction區");
       });
       $('#show').click(function(){
       $('.introduce').show();
@@ -28,7 +29,9 @@
       </section>
       <hr>
     </div>
-    <input type="button" id="hide" value="click"><input type="button" id="show" value="click">
+    <div class="button">
+    <input type="button" id="hide" value="Hide"><input type="button" id="show" value="Show">
+    </div>
     <br>
     <div class="interest">
       <h2>Interest</h2>
@@ -62,7 +65,7 @@
 </html>
 
 <style>
-  h1, h2, .con{
+  h1, h2, .con, .button{
     text-align: center;
   }
   .wel{
@@ -71,7 +74,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .introduce, .interest{
+  .introduce, .interest, .button{
     width: 80%;
     background-color: #FFBB98;
     margin-left: auto;
