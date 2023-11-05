@@ -23,17 +23,12 @@
       $('.interest').slideDown();
       $('.space2').html(" ");
       });
-
-      $('#Top-button').click(function(){ 
-	$('html,body').animate({scrollTop:0}, 333);
+      $('#size1').click(function(){
+      $("hr").css("height":"4px");
       });
-	$(window).scroll(function() {
-		if ( $(this).scrollTop() > 300 ){
-			$('#Top-button').fadeIn(222);
-		} else {
-			$('#Top-button').stop().fadeOut(222);
-		}
-	}).scroll();
+      $('#size2').click(function(){
+      $("hr").css("height":"1px");
+      });
     });
   </script>
   <body bgcolor="#FBE0C3">
@@ -79,12 +74,9 @@
     <div class="button">
     <input type="button" id="hide2" value="Hide"><input type="button" id="show2" value="Show">
     </div>
-    <div class="float-button">
-      <input type="button" id"float-button1" value="+">
-      <input type="button" id"float-button2" value="-">
-    </div>
-    <div class="Top">
-      <input type="button" id"Top-button" value="Top">
+    <div class="size">
+      <input type="button" id"size1" value="+">
+      <input type="button" id"size2" value="-">
     </div>
     <hr>
     <div class="con">
@@ -100,7 +92,7 @@
 </html>
 
 <style>
-  h1, h2, .space, .space2, .con, .button, .Top, .float-button{
+  h1, h2, .space, .space2, .con, .button, .top, .floatButton{
     text-align: center;
   }
   .wel{
@@ -119,7 +111,7 @@
     padding: 20px;
     max-width: 500px;
   }
-  .button{
+  .button, .size{
     width: 80%;
     background-color: #FFEBCD;
     margin-left: auto;
