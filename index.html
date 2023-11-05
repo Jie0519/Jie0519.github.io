@@ -1,8 +1,18 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <html>
   <head>
     <title>My Introduction</title>
   </head>
-  
+  <script>
+    $(document).ready(function(){
+      $('#hide').click(function(){
+      $('.introduce').hide();
+      });
+      $('#show').click(function(){
+      $('.introduce').show();
+      });
+    });
+  </script>
   <body bgcolor="#FBE0C3">
     <div class="wel">
     <h1>Welcome to my personal page!</h1>
@@ -16,9 +26,9 @@
         <h3>系級:醫資二</h3>
         <h3>興趣:運動、聽音樂</h3>
       </section>
-      <input type="button" value="按鈕" onclick="alert('請不要隨便亂按按鈕，可以去多看看影片和聽音樂，也可點擊下方地址')">
       <hr>
     </div>
+    <input type="button" id="hide" value="click"><input type="button" id="show" value="click">
     <br>
     <div class="interest">
       <h2>Interest</h2>
