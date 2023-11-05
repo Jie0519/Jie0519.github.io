@@ -14,6 +14,15 @@
       $('.introduce').slideDown();
       $('.space').html(" ");
       });
+      $('#hide2').click(function(){
+      $('.interest').hide();
+      $('.space2').html("你隱藏了Interest區");
+      $('.space').addClass("animated shake");
+      });
+      $('#show2').click(function(){
+      $('.interest').slideDown();
+      $('.space2').html(" ");
+      });
     });
   </script>
   <body bgcolor="#FBE0C3">
@@ -55,6 +64,10 @@
       </section>
       <hr>
     </div>
+    <p class="space2"></p>
+    <div class="button">
+    <input type="button" id="hide2" value="Hide"><input type="button" id="show2" value="Show">
+    </div>
     <hr>
     <div class="con">
       <section>
@@ -68,7 +81,7 @@
 </html>
 
 <style>
-  h1, h2, .space, .con, .button{
+  h1, h2, .space, .space2, .con, .button{
     text-align: center;
   }
   .wel{
