@@ -7,11 +7,11 @@
     $(document).ready(function(){
       $('#hide').click(function(){
       $('.introduce').hide();
-      $("p").html("你隱藏了Intonduction區");
+      $('.space').html("你隱藏了Intonduction區");
       });
       $('#show').click(function(){
       $('.introduce').show();
-      $("p").html(" ");
+      $('.space').html(" ");
       });
     });
   </script>
@@ -30,7 +30,7 @@
       </section>
       <hr>
     </div>
-    <p></p>
+    <p class="space"></p>
     <div class="button">
     <input type="button" id="hide" value="Hide"><input type="button" id="show" value="Show">
     </div>
@@ -67,7 +67,7 @@
 </html>
 
 <style>
-  h1, h2, p, .con, .button{
+  h1, h2, .space, .con, .button{
     text-align: center;
   }
   .wel{
