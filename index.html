@@ -1,34 +1,14 @@
+<!DOCTYPE html>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <html>
   <head>
-    <title>My Introduction</title>
+    <title>珍稀犬種介紹指南</title>
   </head>
-  <script>
-    $(document).ready(function(){
-      $('#hide').click(function(){
-      $('.introduce').slideUp();
-      $('.space').html("你隱藏了Intonduction區");
-      $('.space').addClass("animated shake");
-      });
-      $('#show').click(function(){
-      $('.introduce').slideDown();
-      $('.space').html(" ");
-      });
-      $('#hide2').click(function(){
-      $('.interest').slideUp();
-      $('.space2').html("你隱藏了Interest區");
-      $('.space').addClass("animated shake");
-      });
-      $('#show2').click(function(){
-      $('.interest').slideDown();
-      $('.space2').html(" ");
-      });
-    });
-  </script>
   <body bgcolor="#FBE0C3">
     <div class="wel">
-    <h1>Welcome to my personal page!</h1>
+    <h1>珍稀犬種的世界</h1>
     </div>
+    <p>世界上充滿著許多不同品種的狗，被認可的種類數量有337種，但事實上被培育出的種類有700至800種!</p>
     <div class="introduce">
       <h2>My Introduction</h2>
       <hr>
@@ -79,41 +59,3 @@
     </div>
   </body>
 </html>
-
-<style>
-  h1, h2, .space, .space2, .con, .button, .top, .floatButton{
-    text-align: center;
-  }
-  .wel{
-    width: 100%;
-    background-color: #E59A59;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .introduce, .interest{
-    width: 80%;
-    background-color: #FFBB98;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 20px;
-    max-width: 500px;
-  }
-  .button, .size{
-    width: 80%;
-    background-color: #FFEBCD;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 20px;
-    max-width: 500px;
-  }
-  hr{
-  height: 2px;
-  background-color: #7D8E95;
-  border-color: #7D8E95;
-  }
-</style>
-
