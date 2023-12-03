@@ -35,6 +35,18 @@
     <div class="dog">
     <img class="dog" src="https://media.istockphoto.com/id/1204670802/zh/%E7%85%A7%E7%89%87/%E5%A5%B3%E4%BA%BA%E6%8A%B1%E8%91%97%E5%8F%AF%E6%84%9B%E7%9A%84%E5%B0%8F%E7%8B%97%E5%85%AC%E9%9B%9E%E8%A5%BF%E7%8F%AD%E7%89%99%E7%8B%97%E7%9A%84%E9%A0%AD%E6%84%9B%E5%8B%95%E7%89%A9%E7%9A%84%E6%A6%82%E5%BF%B5.jpg?s=612x612&w=0&k=20&c=ABrJAuzsEWLERRD3NA1zmxK-uvMm-DdqOapzSpSLb3s=" width="800" >
     </div>
+    <section>
+      <div class="post-box">
+            <img src="https://images.chinatimes.com/newsphoto/2023-05-28/656/20230528002520.jpg" alt class="post-img">
+            <p>柯基</p>
+            <p class="post-description">超級可愛</p>
+      </div>
+      <div class="post-box">
+            <img src="https://img.alicdn.com/imgextra/i2/2200784592709/O1CN01kAcHu51VslU2Ngfkx_!!2200784592709-0-daren.jpg" alt class="post-img">
+            <p>柴犬</p>
+            <p class="post-description">超級可愛</p>
+      </div>
+    </section>
     <p class="space"></p>
     <br>
     <p class="space2"></p>
@@ -118,5 +130,24 @@
   a{
     text-decoration: none;
     color: #645354;
+  }
+  .post-box {
+    background: #fff;
+    box-shadow: 0 4px 14px rgb(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 0.5rem;
+  }
+  .post {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    grid-gap: 1.5rem;
+  }
+
+  .container {
+    max-width: 1068px;
+    margin: auto;
+    padding: 24px 0 24px;
+    width: 100%;
   }
 </style>
