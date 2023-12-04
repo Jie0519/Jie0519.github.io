@@ -5,7 +5,28 @@
     <meta charset="utf-8">
     <title>珍稀犬種介紹指南</title>
   </head>
-  
+  <script>
+    $(document).ready(function(){
+      $('#hide').click(function(){
+      $('.post, .container').slideUp();
+      $('.space').html("點擊解鎖可愛狗狗");
+      $('.space').addClass("animated shake");
+      });
+      $('#show').click(function(){
+      $('.introduce').slideDown();
+      $('.space').html(" ");
+      });
+      $('#hide2').click(function(){
+      $('.interest').slideUp();
+      $('.space2').html("你隱藏了Interest區");
+      $('.space').addClass("animated shake");
+      });
+      $('#show2').click(function(){
+      $('.interest').slideDown();
+      $('.space2').html(" ");
+      });
+    });
+  </script>
   <body bgcolor="#FBE0C3">
     <nav class="navbar">
       <div class="navbar-section">
@@ -37,6 +58,10 @@
     </div>
     <h3>以下是一堆企圖色誘你的狗狗</h3>
     <p class="gg">雖然他們不算珍稀犬種，但他們很可愛</p>
+    <p class="space"></p>
+    <div class="button">
+      <input type="button" id="hide" value="Hide"><input type="button" id="show" value="Show">
+    </div>
     <section class="post container">
       <div class="post-box">
             <img src="https://images.chinatimes.com/newsphoto/2023-05-28/656/20230528002520.jpg" alt class="post-img">
